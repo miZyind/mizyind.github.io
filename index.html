@@ -7,44 +7,52 @@
     <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Noto+Sans"
+      href="https://fonts.googleapis.com/css?family=Noto+Sans|Megrim"
     />
   </head>
   <body>
-    <main>
-      <div class="card">
-        <div class="card-front">
-          <div class="card-top">
-            <div class="txt-name">miZyind</div>
-            <div class="txt-role">Founder</div>
-            <div class="txt-mobile">0912345678</div>
-            <div class="txt-email">mizyind@gmail.com</div>
+    <main class="ani-opacity" onclick="flip()">
+      <div class="card-front">
+        <div class="card-top">
+          <div class="txt-name">miZyind</div>
+          <div class="txt-role">Founder</div>
+          <div class="g-mobile">
+            <div class="img"></div>
+            <div class="txt">0900000000</div>
           </div>
-          <div class="card-bottom">
-            <div class="txt-company">miZyind Studio</div>
-            <div class="txt-address">Taipei, Taiwan & Saigon, Vietnam</div>
-            <div class="txt-website">
-              <a href="https://mizyind.dev" target="_blank">mizyind.dev</a>
-            </div>
+          <div class="g-email">
+            <div class="img"></div>
+            <div class="txt">mizyind@gmail.com</div>
           </div>
         </div>
-        <div class="card-back">
-          <div class="card-top">
-            <div class="logo"></div>
+        <div class="card-bottom">
+          <div class="g-company">
+            <div class="img"></div>
+            <div class="txt">miZyind Studio</div>
           </div>
-          <div class="card-bottom">
-            <div class="qr"></div>
+          <div class="txt-address">Taipei, Taiwan & Saigon, Vietnam</div>
+          <div class="txt-website">
+            <a href="https://www.mizyind.dev">www.mizyind.dev</a>
           </div>
+        </div>
+      </div>
+      <div class="card-back">
+        <div class="card-top">
+          <div class="img logo"></div>
+        </div>
+        <div class="card-bottom">
+          <div class="img qr"></div>
         </div>
       </div>
     </main>
     <footer>
       <div class="btn download">Download V-CARD</div>
       <div class="btns">
-        <a class="btn mobile" title="mobile" href="tel:0912345678"></a>
-        <a class="btn email" title="email" href="mailto:mizyind@gmail.com" /></a>
-        <a class="btn qr"></a>
+        <a class="btn mobile" title="mobile" href="tel:0900000000"></a>
+        <a class="btn email" title="email" href="mailto:mizyind@gmail.com"></a>
+        <a class="btn qr" onclick="flip()"></a>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
